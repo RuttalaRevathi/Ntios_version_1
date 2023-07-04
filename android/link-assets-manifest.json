@@ -1,0 +1,41 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/Assets/fonts/JIMS.ttf",
+      "sha1": "6adf53b8002f942556ec4ce3abb56dc9bcc4844e"
+    },
+    {
+      "path": "src/Assets/fonts/Mandali Regular.otf",
+      "sha1": "ac64b3e4e63aa018e4ddbe373ea32c5dc23ac20b"
+    },
+    {
+      "path": "src/Assets/fonts/Mandali-Regular.ttf",
+      "sha1": "aab7324b400ae07bdc82edf68cd7ccf999c23a56"
+    },
+    {
+      "path": "src/Assets/fonts/Ramabhadra-Regular.ttf",
+      "sha1": "d412f60c047f5446aa7db63f4c91a4185a077880"
+    },
+    {
+      "path": "src/Assets/fonts/RobotoCondensed-Regular.ttf",
+      "sha1": "e0d7acf2ca3dd0ff68f533797bb94b0580397e95"
+    },
+    {
+      "path": "src/Assets/fonts/mandali-bold.ttf",
+      "sha1": "171af780fa160e2ad8d51d5eeb4c3d9f82fd3b33"
+    },
+    {
+      "path": "src/Assets/fonts/mandali-regular-webfont.woff",
+      "sha1": "339c67f256c289da5340dfe9a49e72151370c510"
+    },
+    {
+      "path": "src/Assets/fonts/mandali-regular-webfont.woff2",
+      "sha1": "8c3b42ad1886a0a66ac7bee79e1066d1d5db9a57"
+    },
+    {
+      "path": "src/Assets/fonts/shree0001.ttf",
+      "sha1": "7594f1ee7172b74b19bc864970e8509cbd7e47cf"
+    }
+  ]
+}

@@ -5,7 +5,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeStackNavigator from '../navigation/stack-navigators/HomeStackNavigator';
 import Details from '../screens/Details';
 import Home from '../screens/Home';
-import { Image, Linking, Platform, TouchableOpacity } from 'react-native';
+import { Image, Linking, TouchableOpacity } from 'react-native';
 import { appThemeColor, Dark_Gray } from '../styles/commonstyles';
 import PhotoGallery from '../screens/TopTabScreens/PhotoGallery';
 import LatestNews from '../screens/LatestNews';
@@ -29,7 +29,7 @@ const BottomTabNavigator = () => {
         tabBarItemStyle: { width: 100 },
         tabBarStyle: {
           backgroundColor: '#d8f3fc',
-          height: Platform.OS === 'android' ? 45 : 75,
+          height: 45,
         },
         tabBarOptions: {
           activeBackgroundColor: appThemeColor,
@@ -43,12 +43,17 @@ const BottomTabNavigator = () => {
         options={{
           headerShown: false,
           tabBarLabel: 'Home',
+          tabBarLabelStyle: {
+            fontFamily: 'DIN-Condensed-Bold',
+            color:appThemeColor,
+            fontSize:14
+          },
           tabBarIcon: ({ color, focused }) => (
             <Image
               style={{
                 height: 20,
                 width: 20,
-                tintColor: focused ? appThemeColor : Dark_Gray,
+                tintColor: focused ? appThemeColor : appThemeColor,
                 top: 5,
               }}
               source={require('../Assets/Images/home.png')}
@@ -62,11 +67,16 @@ const BottomTabNavigator = () => {
         options={{
           headerShown: false,
           tabBarLabel: 'Latest News',
+          tabBarLabelStyle: {
+            fontFamily: 'DIN-Condensed-Bold',
+            color:appThemeColor,
+            fontSize:14
+          },
           tabBarIcon: ({ color, focused }) => (
             <Image
               style={{
                 height: 20,
-                width: 20,
+                width: 25,
                 tintColor: focused ? appThemeColor : Dark_Gray,
                 top: 5,
               }}
@@ -81,7 +91,11 @@ const BottomTabNavigator = () => {
         options={{
           headerShown: false,
           tabBarLabel: 'Photo Gallery',
-
+          tabBarLabelStyle: {
+            fontFamily: 'DIN-Condensed-Bold',
+            color:appThemeColor,
+            fontSize:14
+          },
           tabBarIcon: ({ color, focused }) => (
             <Image
               style={{
@@ -95,12 +109,19 @@ const BottomTabNavigator = () => {
           ),
         }}
       />
+     
       <Tab.Screen
         name="Epaper"
         component={HomeStackNavigator}
         options={{
           headerShown: false,
           tabBarLabel: 'e-Paper',
+
+          tabBarLabelStyle: {
+            fontFamily: 'DIN-Condensed-Bold',
+            color:appThemeColor,
+            fontSize:14
+          },
           tabBarButton: props => (
             <TouchableOpacity
               {...props}
@@ -109,13 +130,13 @@ const BottomTabNavigator = () => {
               }}
             />
           ),
-
+         
           tabBarIcon: ({ color, focused }) => (
             <Image
               style={{
                 height: 20,
                 width: 20,
-                tintColor: focused ? appThemeColor : Dark_Gray,
+                tintColor: focused ? appThemeColor : appThemeColor,
                 top: 5,
               }}
               source={require('../Assets/Images/paper.png')}
@@ -123,6 +144,7 @@ const BottomTabNavigator = () => {
           ),
         }}
       />
+     
     </Tab.Navigator>
   );
 };

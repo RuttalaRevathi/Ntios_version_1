@@ -36,15 +36,18 @@ const DrawerNavigator = (navigation) => {
         options={({ navigation }) => ({
           headerStyle: { backgroundColor: appThemeColor },
           headerRight: () => (
-            <View style={HeaderStyle.HeadRightView}>
-              <TouchableOpacity
-              >
+            <TouchableOpacity onPress={() => {
+              Linking.openURL('https://youtube.com/@Namasthetelangaana');
+            }}
+            >
+              <View style={HeaderStyle.HeadRightView}>
                 <Image
                   style={HeaderStyle.HeadRightImg}
-                  source={require('../Assets/Images/bell.png')}
+                  source={require('../Assets/Images/videoicon.png')}
                 />
-              </TouchableOpacity>
+              
             </View>
+            </TouchableOpacity>
           ),
           headerLeft: () => (
             <View style={HeaderStyle.headerLeftView}>
@@ -61,31 +64,34 @@ const DrawerNavigator = (navigation) => {
           ),
           headerTitle: () => (
             <View style={HeaderStyle.HeadTitleView}>
-              <TouchableOpacity onPress={()=>navigation.navigate('Home')}>
-              <Image
-                style={HeaderStyle.HeadTitleImg}
-                source={require('../Assets/Images/logo.png')}
-              />
+              <TouchableOpacity onPress={() => navigation.navigate('Home')}>
+                <Image
+                  style={HeaderStyle.HeadTitleImg}
+                  source={require('../Assets/Images/logo.png')}
+                />
               </TouchableOpacity>
             </View>
           ),
         })}
       />
-    <Drawer.Screen
+      <Drawer.Screen
         name="Contact"
         component={ContactUs}
         options={({ navigation }) => ({
           headerStyle: { backgroundColor: appThemeColor },
           headerRight: () => (
-            <View style={HeaderStyle.HeadRightView}>
-              <TouchableOpacity
-                >
+            <TouchableOpacity onPress={() => {
+              Linking.openURL('https://youtube.com/@Namasthetelangaana');
+            }}
+            >
+              <View style={HeaderStyle.HeadRightView}>
                 <Image
                   style={HeaderStyle.HeadRightImg}
-                  source={require('../Assets/Images/bell.png')}
+                  source={require('../Assets/Images/videoicon.png')}
                 />
-              </TouchableOpacity>
+              
             </View>
+            </TouchableOpacity>
           ),
           headerLeft: () => (
             <View style={HeaderStyle.headerLeftView}>
@@ -116,15 +122,18 @@ const DrawerNavigator = (navigation) => {
         options={({ navigation }) => ({
           headerStyle: { backgroundColor: appThemeColor },
           headerRight: () => (
-            <View style={HeaderStyle.HeadRightView}>
-              <TouchableOpacity
-                >
+            <TouchableOpacity onPress={() => {
+              Linking.openURL('https://youtube.com/@Namasthetelangaana');
+            }}
+            >
+              <View style={HeaderStyle.HeadRightView}>
                 <Image
                   style={HeaderStyle.HeadRightImg}
-                  source={require('../Assets/Images/bell.png')}
+                  source={require('../Assets/Images/videoicon.png')}
                 />
-              </TouchableOpacity>
+              
             </View>
+            </TouchableOpacity>
           ),
           headerLeft: () => (
             <View style={HeaderStyle.headerLeftView}>
@@ -155,15 +164,18 @@ const DrawerNavigator = (navigation) => {
         options={({ navigation }) => ({
           headerStyle: { backgroundColor: appThemeColor },
           headerRight: () => (
-            <View style={HeaderStyle.HeadRightView}>
-              <TouchableOpacity
-                >
+            <TouchableOpacity onPress={() => {
+              Linking.openURL('https://youtube.com/@Namasthetelangaana');
+            }}
+            >
+              <View style={HeaderStyle.HeadRightView}>
                 <Image
                   style={HeaderStyle.HeadRightImg}
-                  source={require('../Assets/Images/bell.png')}
+                  source={require('../Assets/Images/videoicon.png')}
                 />
-              </TouchableOpacity>
+             
             </View>
+            </TouchableOpacity>
           ),
           headerLeft: () => (
             <View style={HeaderStyle.headerLeftView}>
@@ -193,16 +205,20 @@ const DrawerNavigator = (navigation) => {
         component={Terms}
         options={({ navigation }) => ({
           headerStyle: { backgroundColor: appThemeColor },
-          headerRight: () => (
-            <View style={HeaderStyle.HeadRightView}>
-              <TouchableOpacity
-                >
+          videoicon: () => (
+
+            <TouchableOpacity onPress={() => {
+              Linking.openURL('https://youtube.com/@Namasthetelangaana');
+            }}
+            >
+              <View style={HeaderStyle.HeadRightView}>
                 <Image
                   style={HeaderStyle.HeadRightImg}
-                  source={require('../Assets/Images/bell.png')}
+                  source={require('../Assets/Images/videoicon.png')}
                 />
-              </TouchableOpacity>
-            </View>
+
+              </View>
+            </TouchableOpacity>
           ),
           headerLeft: () => (
             <View style={HeaderStyle.headerLeftView}>
